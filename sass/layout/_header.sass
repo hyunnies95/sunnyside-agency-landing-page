@@ -1,20 +1,18 @@
 .header
   background-color: $col-blue
   background-image: url(../images/mobile/image-header.jpg)
-  background-position-x: center
-  background-position-y: -30rem
   background-size: cover
-  background-attachment: fixed
+  background-position: bottom
   background-repeat: no-repeat
   color: $col-white
   position: relative
   height: 53.8rem
-  @media screen and (min-width: 768px)
+  @media screen and (min-width: 600px)
     background-image: url(../images/desktop/image-header.jpg)
     background-size: 144rem
     background-position-y: 0
+    background-attachment: fixed
     height: 80rem
-  @media screen and (min-width: 992px)
   &__logo
     width: 17rem
   &__nav

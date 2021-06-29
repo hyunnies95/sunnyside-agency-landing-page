@@ -197,20 +197,19 @@ p {
 .header {
   background-color: #3EBFFF;
   background-image: url(../images/mobile/image-header.jpg);
-  background-position-x: center;
-  background-position-y: -30rem;
   background-size: cover;
-  background-attachment: fixed;
+  background-position: bottom;
   background-repeat: no-repeat;
   color: #FFFFFF;
   position: relative;
   height: 53.8rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .header {
     background-image: url(../images/desktop/image-header.jpg);
     background-size: 144rem;
     background-position-y: 0;
+    background-attachment: fixed;
     height: 80rem;
   }
 }
@@ -369,7 +368,7 @@ p {
   flex-direction: column;
   text-align: center;
   padding: 6.4rem 2.4rem;
-  height: 43.7rem;
+  min-height: 43.7rem;
 }
 @media screen and (min-width: 768px) {
   .features__text {
@@ -449,7 +448,7 @@ p {
   align-items: flex-end;
   text-align: center;
   padding: 0 2.4rem 4.4rem;
-  height: 60rem;
+  min-height: 60rem;
   width: 100%;
 }
 @media screen and (min-width: 1800px) {
